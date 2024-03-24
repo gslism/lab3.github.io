@@ -18,9 +18,11 @@ try {
     $someGroupName = $_POST['someGroupName'];
     $bio = $_POST['bio'];
     $checkt = $_POST['checkt'];
-    foreach ($_POST['lange'] as $lange) {
-        $stmt->bindParam(':lange_name',',', $lange);
-    }
+    $lange = serialize($_POST['lange']);
+    $stmt->bindParam(':lange_name', $lange);
+    // foreach ($_POST['lange'] as $lange) {
+    //     $stmt->bindParam(':lange_name', $lange);
+    // }
     $stmt->bindParam(':full_name', $login);
     $stmt->bindParam(':phone', $tel);
     $stmt->bindParam(':email', $email);
