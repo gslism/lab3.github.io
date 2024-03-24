@@ -15,7 +15,7 @@
 <body>
     <div class="tg">
         <div class="wrap lh-lg">
-            <form action="register.php" id="form" class="row g-3 needs-validation" validate>
+            <form action="register.php"  method="POST" id="form" class="row g-3 needs-validation" validate>
                 <h3 id="form">Форма</h3>
                 <div class="col-auto">
                   <label for="validationCustom01" class="form-label">Фамилия Имя Отчество:</label>
