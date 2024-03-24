@@ -49,11 +49,11 @@
                   <p>Выберите ваш пол:<br /></p>
                   <div class="form-check icheck-material-orange">
                     <input class="form-check-input" type="radio" id="someRadioId1" name="someGroupName" required=""/>
-                    <label class="form-check-label" for="someRadioId1">Женский</label>
+                    <label class="form-check-label" value="women" for="someRadioId1">Женский</label>
                   </div>
                   <div class="form-check icheck-material-orange">
                     <input class="form-check-input" type="radio" id="someRadioId2" name="someGroupName"/>
-                    <label class="form-check-label" for="someRadioId2">Мужской</label>
+                    <label class="form-check-label" value="men" for="someRadioId2">Мужской</label>
                   </div>
                 </div>
           
@@ -85,7 +85,7 @@
                 <div class="col-auto">С контрактом:
                   <div class="form-check icheck-material-orange">
                     <input class="form-check-input" type="checkbox" placeholder="check" name="checkt" value="" id="invalidCheck" required=""/>
-                    <label class="form-check-label" for="invalidCheck">
+                    <label class="form-check-label" value=" Ознакомлен (а)" for="invalidCheck">
                       Ознакомлен (а)
                     </label>
                     <div class="invalid-feedback"></div>
