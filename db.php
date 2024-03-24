@@ -10,7 +10,7 @@ $db = new PDO(
 );
 
 try {
-    $stmt = $db->prepare("INSERT INTO users (full_name, phone,email,birth_date,gender,bio,contract_agreed) VALUES (:full_name, :phone,:email,:birth_date,:gender,:bio,:contract_agreed)");
+    $stmt = $db->prepare("INSERT INTO forma_zapisi2 (full_name, phone,email,birth_date,gender,bio,contract_agreed) VALUES (:full_name, :phone,:email,:birth_date,:gender,:bio,:contract_agreed)");
     $login = $_POST['login'];
     $email = $_POST['email'];
     $tel = $_POST['tel'];
