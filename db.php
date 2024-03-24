@@ -18,9 +18,10 @@ try {
     $someGroupName = $_POST['someGroupName'];
     $bio = $_POST['bio'];
     $checkt = $_POST['checkt'];
-    foreach ($lange = implode(', ', $_POST['lange']);) {
-        $stmt->bindParam(':lange_name', $lange);
-    }
+    // foreach ($lange = implode(', ', $_POST['lange'])) {
+    //     $stmt->bindParam(':lange_name', $lange);
+    // }
+    $lange = implode(', ', $_POST['lange']);
     $stmt->bindParam(':full_name', $login);
     $stmt->bindParam(':phone', $tel);
     $stmt->bindParam(':email', $email);
