@@ -3,14 +3,14 @@
 $user = 'u67293';
 $pass = '3126725';
 $db = new PDO(
-    'mysql:host=localhost;dbname=forma_zapisi2',
+    'mysql:host=localhost;dbname=u67293',
     $user,
     $pass,
     [PDO::ATTR_PERSISTENT => true, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
 );
 
 try {
-    $stmt = $db->prepare("INSERT INTO forma_zapisi2 (lang_name) VALUES (:lang_name)");
+    $stmt = $db->prepare("INSERT INTO language_prog (lang_name) VALUES (:lang_name)");
     $lange = $_POST['lange'];
 
     $kl = implode($Languages);

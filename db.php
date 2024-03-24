@@ -10,12 +10,13 @@ $db = new PDO(
 );
 
 try {
-    $stmt = $db->prepare("INSERT INTO forma_zapisi2 (full_name, phone,email,birth_date,gender,bio,contract_agreed) VALUES (:full_name, :phone,:email,:birth_date,:gender,:bio,:contract_agreed)");
+    $stmt = $db->prepare("INSERT INTO forma_zapisi2 (full_name, phone,email,birth_date,gender,lange_name,bio,contract_agreed) VALUES (:full_name, :phone,:email,:birth_date,:gender,:lange_name,:bio,:contract_agreed)");
     $login = $_POST['login'];
     $email = $_POST['email'];
     $tel = $_POST['tel'];
     $date = $_POST['date'];
     $someGroupName = $_POST['someGroupName'];
+    $lange = $_POST['lange'];
     $bio = $_POST['bio'];
     $checkt = $_POST['checkt'];
 
@@ -24,6 +25,7 @@ try {
     $stmt->bindParam(':email', $email);
     $stmt->bindParam(':birth_date', $date);
     $stmt->bindParam(':gender', $someGroupName);
+    $stmt->bindParam(':lange_name', $date);
     $stmt->bindParam(':bio', $bio);
     $stmt->bindParam(':contract_agreed', $checkt);
     // $stmt = $db->prepare("INSERT INTO programming_languages (lang_name) VALUES (:lang_name)");
