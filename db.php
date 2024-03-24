@@ -19,7 +19,7 @@ try {
     $bio = $_POST['bio'];
     $checkt = $_POST['checkt'];
     foreach ($_POST['lange'] as $lange) {
-        $stmt->bindParam(':lange_name', $lange);
+        $stmt->bindParam('".implode(",",:lange_name)."', $lange);
     }
     $stmt->bindParam(':full_name', $login);
     $stmt->bindParam(':phone', $tel);
