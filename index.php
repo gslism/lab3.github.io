@@ -41,7 +41,7 @@
           
                 <div class="col-auto">
                   <label>Дата рождения:<br />
-                    <input class="form-control rounded-pill" placeholder="date" name="data" type="date" required=""/>
+                    <input class="form-control rounded-pill" placeholder="date" name="date" type="date" required=""/>
                   </label>
                 </div>
           
