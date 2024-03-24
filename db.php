@@ -18,9 +18,9 @@ try {
     $someGroupName = $_POST['someGroupName'];
     $bio = $_POST['bio'];
     $checkt = $_POST['checkt'];
-    $lange1 = serialize($_POST['lange']);
+    $lange1 = json_encode($_POST['lange']);
     $stmt->bindParam(':lange_name', $lange2);
-    $lange2=unserialize($lange1);
+    $lange2=json_decode($lange1);
     // foreach ($_POST['lange'] as $lange) {
     //     $stmt->bindParam(':lange_name', $lange);
     // }
