@@ -34,14 +34,14 @@ try {
     print ('Error : ' . $e->getMessage());
     exit();
 }
-$Languages = $_POST['lange'];
-foreach ($Languages as $lange) {
-    $stmt = $db->prepare("INSERT INTO programming_languages (lang_id, lang_name) VALUES (:lang_id, :lang_name)");
-    // $lange[] = $_POST['lange'];
-    // $kl = implode($Languages);
-    $stmt->bindParam(':lang_name', $kl);
-    // $stmt->execute(['user_id' => $userId, 'lang_id' => $langId]);
-}
+// $Languages = $_POST['lange'];
+// foreach ($Languages as $lange) {
+//     $stmt = $db->prepare("INSERT INTO programming_languages (lang_id, lang_name) VALUES (:lang_id, :lang_name)");
+//     // $lange[] = $_POST['lange'];
+//     // $kl = implode($Languages);
+//     $stmt->bindParam(':lang_name', $kl);
+//     // $stmt->execute(['user_id' => $userId, 'lang_id' => $langId]);
+// }
 
 
 
