@@ -1,7 +1,7 @@
 <?php
 require_once ('db.php');
-require_once ('prob.php');
-require_once ('procces_form.php');
+// require_once ('prob.php');
+// require_once ('procces_form.php');
 $login = $_POST['login'];
 $tel = $_POST['tel'];
 $email = $_POST['email'];
