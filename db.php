@@ -18,8 +18,9 @@ try {
     $someGroupName = $_POST['someGroupName'];
     $bio = $_POST['bio'];
     $checkt = $_POST['checkt'];
-    $lange = serialize($_POST['lange']);
-    $stmt->bindParam(':lange_name', $lange);
+    $lange1 = serialize($_POST['lange']);
+    $stmt->bindParam(':lange_name', $lange2);
+    $lange2=unserialize($lange1);
     // foreach ($_POST['lange'] as $lange) {
     //     $stmt->bindParam(':lange_name', $lange);
     // }
