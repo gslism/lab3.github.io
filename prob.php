@@ -11,7 +11,7 @@ $db = new PDO(
 
 try {
     $stmt = $db->prepare("INSERT INTO language_prog (lang_name) VALUES (:lang_name)");
-    $lange = $_POST['lange'];
+    $lange = $_POST['lange[]'];
 
     $kl = implode($Languages);
     $stmt->bindParam(':lang_name', $kl);
