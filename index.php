@@ -41,7 +41,7 @@
           
                 <div class="col-auto">
                   <label>Дата рождения:<br />
-                    <input name="field-date" class="form-control rounded-pill" placeholder="date" name="date" type="date" required=""/>
+                    <input class="form-control rounded-pill" placeholder="date" name="data" type="date" required=""/>
                   </label>
                 </div>
           
@@ -78,7 +78,7 @@
           
                 <div class="col-auto">
                   <label>Биография:<br />
-                    <textarea name="field-name-2" class="form-control rounded-pill" placeholder="bio" name="bio" required=""></textarea>
+                    <textarea class="form-control rounded-pill" placeholder="bio" name="bio" required=""></textarea>
                   </label>
                 </div>
           
