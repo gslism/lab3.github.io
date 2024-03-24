@@ -20,7 +20,6 @@ try {
     $checkt = $_POST['checkt'];
     foreach ($_POST['lange'] as $lange) {
         $stmt->bindParam(':language_name', $lange);
-        echo $lange . "<br>\r\n";
     }
     $stmt->bindParam(':full_name', $login);
     $stmt->bindParam(':phone', $tel);
