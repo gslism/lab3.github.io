@@ -1,4 +1,4 @@
-<?PHP
+<!-- <?PHP
 
 $user = 'u67293';
 $pass = '3126725';
@@ -8,7 +8,7 @@ $db = new PDO(
     $pass,
     [PDO::ATTR_PERSISTENT => true, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
 );
-
+foreach ($_POST['lange'] as $lange) {}
 try {
     $stmt = $db->prepare("INSERT INTO language_prog (lang_name) VALUES (:lang_name)");
     $lange = $_POST['lange[]'];
@@ -22,4 +22,4 @@ try {
     exit();
 }
 
-?>
+?> -->

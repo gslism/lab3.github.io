@@ -10,7 +10,7 @@ $db = new PDO(
 );
 
 try {
-    $stmt = $db->prepare("INSERT INTO forma_zapisi2 (full_name, phone,email,birth_date,gender,bio,contract_agreed) VALUES (:full_name, :phone,:email,:birth_date,:gender,:bio,:contract_agreed)");
+    $stmt = $db->prepare("INSERT INTO forma_zapisi2 (full_name, phone,email,birth_date,gender,lange_name,bio,contract_agreed) VALUES (:full_name, :phone,:email,:birth_date,:gender,:lange_name,:bio,:contract_agreed)");
     $login = $_POST['login'];
     $email = $_POST['email'];
     $tel = $_POST['tel'];
@@ -18,7 +18,9 @@ try {
     $someGroupName = $_POST['someGroupName'];
     $bio = $_POST['bio'];
     $checkt = $_POST['checkt'];
-
+    foreach ($_POST['lange'] as $lange) {
+        $stmt->bindParam(':lange_name', $lange);
+    }
     $stmt->bindParam(':full_name', $login);
     $stmt->bindParam(':phone', $tel);
     $stmt->bindParam(':email', $email);
